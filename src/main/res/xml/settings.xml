@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceScreen
+            android:key="buy"
+            android:title="评价购买" />
+    <PreferenceScreen
+        android:key="cameraService_start"
+        android:title="开启相机" />
+    <PreferenceScreen
+        android:key="cameraService_stop"
+        android:title="关闭相机" />
+    <PreferenceScreen
+        android:key="statebarCamera"
+        android:title="顶栏相机" />
+    <PreferenceScreen android:title="定时拍摄" >
+        <PreferenceScreen
+            android:key="cameraTime"
+             android:summary="开始前请利用本程序的开启本相机进行取景\n请勿同时使用其它相机，定时后支持锁屏"
+            android:title="定时拍摄" />
+
+        <EditTextPreference
+            android:defaultValue="30"
+            android:dialogTitle="拍摄间隔"
+            android:key="cameraTime_period"
+            android:phoneNumber="true"
+            android:summary="指定拍摄间隔"
+            android:title="拍摄间隔" />
+    </PreferenceScreen>
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="cemera_auto_face"
+        android:summaryOff="关闭"
+        android:summaryOn="解锁时自动记录解锁人，需要前置摄像头支持"
+        android:title="自动记录" />
+
+    <PreferenceScreen
+        android:key="cameraHelp"
+        android:title="使用帮助" />
+    <PreferenceScreen
+        android:key="cameraCare"
+        android:title="注意事项" />
+
+    <PreferenceCategory android:title="其它" >
+        <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="camera_vibrator"
+        android:summaryOff="关闭"
+        android:summaryOn="拍摄成功，震动提示"
+        android:title="震动提示" />
+        <PreferenceScreen
+        android:key="tuijian_dream"
+        android:title="魅手势" />
+        <PreferenceScreen android:title="kenai软件" android:key="tuiguang"/>
+
+        <PreferenceScreen
+            android:key="call"
+            android:title="联系作者" />
+        <PreferenceScreen
+            android:key="Esc"
+            android:title="完全退出" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
